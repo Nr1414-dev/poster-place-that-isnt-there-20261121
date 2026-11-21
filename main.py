@@ -357,9 +357,9 @@ def draw_poster(cv):
     cv.poly([(lx - 9 * u, lbase - 104 * u), (lx + 9 * u, lbase - 104 * u),
              (lx + 6 * u, lbase - 120 * u), (lx - 6 * u, lbase - 120 * u)], INK)
     cv.disc(lx, lbase - 112 * u, 7 * u, SUN)
-    # light beam toward the sun
+    # light beam toward the sun: tapered, reaching into the sun disc
     cv.poly([(lx + 8 * u, lbase - 116 * u), (lx + 8 * u, lbase - 106 * u),
-             (lx + 150 * u, lbase - 74 * u), (lx + 150 * u, lbase - 88 * u)],
+             (lx + 196 * u, lbase - 75 * u), (lx + 196 * u, lbase - 78 * u)],
             lerp(SUN, HORIZON, 0.25))
 
     # --- small isle with pines, right ------------------------------------
